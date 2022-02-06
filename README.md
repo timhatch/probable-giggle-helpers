@@ -14,7 +14,7 @@ $ ./admin.rb -p                  # purges the broadcast stream
 ```
 
 ## registration.rb
-Read a CSV file containing climber information and update the LAN database to include these climbers
+Read a CSV file containing climber information and update the database to include these climbers
 
 **Run**
 
@@ -29,6 +29,22 @@ The required file format is a comma-delimited CSV file with headers as follow:
 per_id,lastname,firstname,club,nation,birthyear,gender
 2000104,Abbey,Sam,,,,M
 2000347,Acereda Ortiz,Carla,,,1998,F
+```
+
+## startlist.rb
+Read a CSV file containing climber information and update the database to include these climbers for some specified competition and round
+
+**Run**
+
+```bash
+$ ./startlist.rb -f <filename>	
+# reads <filename> and adds any new climbers into the database
+```
+
+The required file format is a comma-delimited CSV file with headers as follow:
+
+```bash
+wet_id, route, grp_id, per_id, start_order, rank_prev_heat 
 ```
 
 ## results-delete.rb

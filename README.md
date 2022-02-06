@@ -30,11 +30,30 @@ per_id,lastname,firstname,club,nation,birthyear,gender
 2000104,Abbey,Sam,,,,M
 2000347,Acereda Ortiz,Carla,,,1998,F
 ```
+
 ## results-delete.rb
-Delete results within some round of a competition for either: (a) a specified category; (b) a defined competitor; or (c) the competitor with start number [x]
+Delete all results within some round of a competition for either: (a) a specified category; (b) a defined competitor; or (c) the competitor with start number [x]. This in effect erases the results completely.
 
 **Run**
 
 ```bash
-$ ./results-delete.rb -w <competition_id> -r <round> [-c <category_id> | -p <person_id> | -s <start_nr>]
+$ ./results-delete.rb -w <competition_id> -r <round> -c <category_id> [-p <person_id> | -s <start_nr>]
+```
+
+## results-export.rb
+Export results for some round
+
+**Run**
+
+```bash
+$ ./results-export.rb -w <competition_id> -r <round> -c <category_id>
+```
+
+## results-reset.rb
+Reset all results within some round of a competition for either: (a) a specified category; (b) a defined competitor; or (c) the competitor with start number [x]. This simply resets the results (i.e. as though the relevant competitor has not yet started the round)
+
+**Run**
+
+```bash
+$ ./results-reset.rb -w <competition_id> -r <round> -c <category_id> [-p <person_id> | -s <start_nr>]
 ```

@@ -1,0 +1,16 @@
+Metrics/LineLength:
+  Max: 99
+
+Metrics/MethodLength:
+  Max: 15
+
+Style/MethodDefParentheses:
+  Enabled: false
+
+Documentation:
+  Enabled: false
+
+# Allow multi-line blocks delimited by {...}
+# Useful for Sequel statements
+Style/BlockDelimiters:
+  Enabled: false

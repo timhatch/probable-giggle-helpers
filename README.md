@@ -32,13 +32,13 @@ per_id,lastname,firstname,club,nation,birthyear,gender
 ```
 
 ## startlist.rb
-Read a CSV file containing climber information and update the database to include these climbers for some specified competition and round
+Read a CSV file containing the startlist for some specified competition, round and category
 
 **Run**
 
 ```bash
 $ ./startlist.rb -f <filename>	
-# reads <filename> and adds any new climbers into the database
+# reads <filename> and creates the startlist for a new round
 ```
 
 The required file format is a comma-delimited CSV file with headers as follow:

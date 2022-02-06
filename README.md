@@ -9,8 +9,8 @@ Provides options to:
 **Run**
 
 ```bash
-./admin.rb -w <competition_id> # sets the active competition
-./admin.rb -p                  # purges the broadcast stream
+$ ./admin.rb -w <competition_id> # sets the active competition
+$ ./admin.rb -p                  # purges the broadcast stream
 ```
 
 ## registration.rb
@@ -19,7 +19,7 @@ Read a CSV file containing climber information and update the LAN database to in
 **Run**
 
 ```bash
-./registration.rb -f <filename>	
+$ ./registration.rb -f <filename>	
 # reads <filename> and adds any new climbers into the database
 ```
 
@@ -30,4 +30,11 @@ per_id,lastname,firstname,club,nation,birthyear,gender
 2000104,Abbey,Sam,,,,M
 2000347,Acereda Ortiz,Carla,,,1998,F
 ```
+## results-delete.rb
+Delete results within some round of a competition for either: (a) a specified category; (b) a defined competitor; or (c) the competitor with start number [x]
 
+**Run**
+
+```bash
+$ ./results-delete.rb -w <competition_id> -r <round> [-c <category_id> | -p <person_id> | -s <start_nr>]
+```
